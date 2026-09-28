@@ -56,8 +56,9 @@
     border-bottom:1px solid var(--border);
   }
   header .wrap{ display:flex; align-items:center; justify-content:space-between; padding-top:16px; padding-bottom:16px; gap:16px; }
-  .brand{ font-size:19px; color:var(--ink); text-decoration:none; }
+  .brand{ font-size:19px; color:var(--ink); text-decoration:none; display:flex; align-items:center; gap:9px; }
   .brand span{ color:var(--accent); }
+  .brand svg{ display:block; }
   .nav-right{ display:flex; align-items:center; gap:22px; }
   .nav-link{ font-size:14.5px; color:var(--ink-soft); text-decoration:none; }
   .nav-link:hover{ color:var(--ink); }
@@ -147,7 +148,13 @@
 
 <header>
   <div class="wrap">
-    <a href="#top" class="brand">pulsodeventas<span>.</span></a>
+    <a href="#top" class="brand">
+      <svg width="26" height="14" viewBox="0 0 64 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 24 L15 24 L19 8 L23 30 L27 16 L33 16 L58 5" stroke="var(--accent)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="58" cy="5" r="4.5" fill="var(--accent)"/>
+      </svg>
+      pulsodeventas
+    </a>
     <nav class="nav-right">
       <a class="nav-link" href="#como-trabajo">Cómo trabajo</a>
       <a class="btn btn-accent btn-sm" href="#contacto">Agendar diagnóstico</a>
